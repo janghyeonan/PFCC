@@ -13,16 +13,16 @@ import test_data as td  #좌표가 들어 있는 파일
 @pytest.mark.api
 @pytest.mark.parametrize('lst', td.test_api)
 def test_api(lst): #test_api(td.test_api)
-    '''<b>테스트 내용</b> : 3가지 API 정상여부 확인(login, farm list, farm list 개수)</br></br>
+    '''<b>테스트 내용</b> : 3가지 API 정상여부 확인(login, list, list 개수)</br></br>
     <b>진행스탭</b></br>
     1. id, pw를 적어둔다.</br>
-    2. https://apging.ole.io의 api를 이용하여 3가지(login, farm list, farm list 개수)를 확인한다.</br>
+    2. https://apging.ole.io의 api를 이용하여 3가지(login, list, list 개수)를 확인한다.</br>
     3. 상태 코드를 확인한다.</br>
     4. 팜리스트 데이터 개수를 확인한다.</br></br>
     </br><b>기대결과</b> : 상태 코드값이 200이 되야 한다. 팜리스트 데이터 개수가 1개 이상이여야 한다.</br>    
     ''' 
     code ="" 
-    if lst[0] =="farm_cnt":
+    if lst[0] =="cnt":
         code = api_farm()[0]
         
         #검증
