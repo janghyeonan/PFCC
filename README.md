@@ -1,35 +1,39 @@
-# PFCC
-PFCC (Python File Cleanup Collection) is a collection of Python scripts for various purposes related to file handling, testing, and API development.
+#테스트 자동화 관련 폴더/파일
 
-## Guide to folders
-The project is organized into several folders, each containing scripts related to a specific aspect of the project:
+##PFCC
+PFCC(Python File Cleanup Collection)는 파일 처리, 테스트, API 개발과 관련된 다양한 목적을 위한 파이썬 스크립트 모음입니다.
+
+## 폴더 안내
+여러 폴더로 구성되어 있으며, 각각의 스크립트파일로 되어 있습니다.:
 
 ### automation_test_code
-This folder contains scripts related to automated testing of the project:
-- `conftest.py`: Configuration file for pytest.
-- `ios_qa_test.py`: Script for testing iOS applications.
-- `nd_app_full_test.py`: Script for testing the full functionality of a web application.
-- `test_data.py`: Script for generating test data.
+이 폴더는 프로젝트의 자동화된 테스트와 관련된 스크립트가 포함되어 있습니다:
+- `conftest.py`: pytest를 위한 구성 파일입니다.(공통 함수 포함)
+- `ios_qa_test.py`: iOS 애플리케이션 테스트 스크립트입니다.
+- `nd_app_full_test.py`: 웹 애플리케이션의 전체 기능을 테스트하는 스크립트입니다.(전체 시나리오 테스트)
+- `test_data.py`: 테스트 데이터가 추가된 스크립트입니다.
 
 ### database_etc
-This folder contains scripts related to database management and API development:
-- `api_post_insert.py`: Script for inserting data into an API using POST requests.
-- `aws_lambda_function.py`: Script for running Python code on AWS Lambda.
-- `database_api_flask.py`: Script for creating an API using Flask.
-- `jenkins_run.py`: Script for running a Jenkins job.
+이 폴더는 데이터베이스 관리 및 API 개발과 관련된 스크립트가 포함되어 있습니다:
+- `api_post_insert.py`: POST 요청을 사용하여 API에 데이터를 삽입하는 스크립트입니다.
+- `aws_lambda_function.py`: AWS Lambda에서 Python 코드를 실행하는 스크립트입니다.
+- `database_api_flask.py`: Flask를 사용하여 API를 생성하는 스크립트입니다.
+- `jenkins_run.py`: Jenkins 작업을 실행하는 스크립트입니다.
 
 ### github_action_file
-This folder contains scripts related to GitHub Actions:
-- `main.py`: Script for creating a GitHub Action workflow.
-- `subinfo.py`: Script for creating a sub-info message.
+이 폴더는 GitHub Actions와 관련된 스크립트가 포함되어 있습니다:
+- `main.py`: GitHub Action workflow를 만드는 스크립트입니다.
+- `subinfo.py`: 텔레그램 연동 정보가 들어 있는 스크립트입니다.
 
 ### test_api_flask
-This folder contains scripts related to testing the Flask API:
-- `app.py`: Flask application for the API.
-- `restxapi.py`: Script for testing the RESTful API.
+이 폴더는 Flask API를 테스트하는 스크립트가 포함되어 있습니다:
+- `app.py`: API용 Flask 애플리케이션입니다.
+- `restxapi.py`: RESTful API로 만든 스크립트입니다.
 
-## Usage
-Detailed instructions on how to use each script can be found in the README files in each folder. 
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+## 사용법
+각 스크립트의 사용 방법에 대한 자세한 지침은 각 폴더의 README 파일에서 찾을 수 있습니다.
+
+
+## 라이선스
+이 프로젝트는 MIT 라이선스에 따라 라이선스가 부여됩니다. 자세한 내용은 `LICENSE` 파일을 참조하십시오.
